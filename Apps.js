@@ -16,6 +16,8 @@ const DisplayLoadsPhones = (phones,dataLimit) => {
     }
     else {
         ShowAll.classList.add('d-none');
+        const SearchInputField = document.getElementById('search-input');
+        SearchInputField.value = '';
     }
     // display no phones found
     const NoPhonesFound = document.getElementById('no-found-message');
